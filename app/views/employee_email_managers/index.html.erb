@@ -1,0 +1,35 @@
+<div class = 'navigation_bar_dashboard'> 
+    <ul>
+        <a href='/employees'><li>ALL QUOTES</li></a>
+        <a href='/employee_email_managers'><li>NOTIFICATION MANAGER</li></a>
+    </ul>
+</div>
+
+<h1>Manage who gets email notifications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td>Name</td>
+        <td>Email</td>
+
+      </tr>
+    <% @emails.each do |email| %>
+
+      <tr>
+        <td><%= email.name %></td>
+        <td><%= email.email %></td>
+        <td><%= link_to 'Show', employee_email_manager_path(email) %></td>
+        <td><%= link_to 'Delete', employee_email_manager_path(email), method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+    <%= render 'form' %>

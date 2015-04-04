@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adtype: MyString
+  views: MyString
+  demographics: MyString
+  subtotal: MyString
+
+two:
+  adtype: MyString
+  views: MyString
+  demographics: MyString
+  subtotal: MyString

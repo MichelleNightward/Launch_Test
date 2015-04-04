@@ -1,0 +1,9 @@
+
+  <%= f.select :adtype, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
+  <%= f.select :views, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
+  <%= f.select :demographics, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
+  <%= f.select :subtotal, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
