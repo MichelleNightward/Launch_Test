@@ -161,7 +161,7 @@
   .navigation_bar li {
     display: inline-block;
     margin-right: -4px;
-  }
+  }*/
 
   .btn_info {
   -webkit-border-radius: 28;
